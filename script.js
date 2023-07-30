@@ -8,3 +8,5 @@ function fixNav() {
     nav.classList.remove("active");
   }
 }
+
+// portfolio section
