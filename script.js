@@ -9,4 +9,19 @@ function fixNav() {
   }
 }
 
-// portfolio section
+// my Work starts
+const panels = document.querySelectorAll(".panel");
+
+panels.forEach((panel) => {
+  panel.addEventListener("click", () => {
+    removeActiveClasses();
+    panel.classList.add("clicked");
+  });
+});
+
+function removeActiveClasses() {
+  panels.forEach((panel) => {
+    panel.classList.remove("clicked");
+  });
+}
+// my Work ends

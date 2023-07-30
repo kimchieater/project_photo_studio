@@ -13,8 +13,8 @@
         <ul>
           <li><a href="/index.html" class="current">Home</a></li>
           <li><a href="#myWork">My Work</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -28,27 +28,86 @@
 
     <!-- portfolio section start -->
     <section class="container content" id="myWork">
-      <div class="panel active">
-        <h3>Explore My work</h3>
+      <div
+        class="panel clicked"
+        style="background-image: url('img/myWork0.avif')"
+      >
+        <h3>By OH Studio</h3>
       </div>
+      <div
+        class="panel"
+        style="background-image: url('img/myWork1.avif')"
+      ></div>
+      <div
+        class="panel"
+        style="background-image: url('img/myWork2.avif')"
+      ></div>
+      <div
+        class="panel"
+        style="background-image: url('img/myWork3.avif')"
+      ></div>
+      <div
+        class="panel"
+        style="background-image: url('img/myWork4.avif')"
+      ></div>
+      <div
+        class="panel"
+        style="background-image: url('img/myWork5.avif')"
+      ></div>
+      <div
+        class="panel"
+        style="background-image: url('img/myWork6.avif')"
+      ></div>
     </section>
     <!-- portfolio End -->
-    <section>
-      <h3>content two</h3>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores
-        placeat dolorem mollitia modi perferendis deleniti itaque dignissimos
-        eveniet facilis ad soluta, commodi repudiandae, sequi cum quaerat
-        perspiciatis deserunt, est laborum a! Accusamus perferendis ratione
-        perspiciatis aspernatur dolor rem sint dolorum molestiae est officia
-        similique, quis veniam nisi sed fugit a nobis quod corporis obcaecati
-        asperiores expedita! Quam facere exercitationem ipsum animi harum, et,
-        repellat iusto inventore, necessitatibus nihil minima iure commodi
-        deserunt. Harum dolore facilis expedita laboriosam impedit, ab fugit est
-        iure eius tenetur dignissimos vitae labore ut aperiam laborum blanditiis
-        explicabo veniam ratione quae minima sapiente sequi. Et, blanditiis.
-      </p>
+    <!-- about starts -->
+    <section id="about">
+      <div class="about-container">
+        <img src="img/about.avif" alt="picture of myself" />
+      </div>
+      <div class="about-container2">
+        <h3>Hi! I'm Olivia Hwang, Moment Capture/Kimchi Lover</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui ut nam
+          mollitia nostrum libero labore accusamus hic, atque necessitatibus
+          sapiente?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Velit, est! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Aperiam expedita impedit fugiat porro ipsum magnam ullam quaerat odit
+          dolore. Quis pariatur, illo facere nobis obcaecati repellat ab impedit
+        </p>
+      </div>
     </section>
+    <!-- about ends -->
+    <!-- contact starts -->
+    <section id="contact">
+      <div class="contact-container">
+        <form>
+          <h1>Lets Take Some Cool Pictures!</h1>
+
+          <lable for="name">Name:</lable>
+          <input type="text" id="name" placeholder="Your Name" />
+          <small class="error"></small>
+
+          <lable for="email">Email:</lable>
+          <input type="text" id="email" placeholder="Your Email" />
+          <small class="error"></small>
+
+          <lable for="Message">Message:</lable>
+          <textarea
+            id="message"
+            placeholder="What's your idea?"
+            rows="6"
+          ></textarea>
+          <small class="error"></small>
+
+          <div class="center">
+            <input type="submit" value="Send Message" />
+            <p id="success"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- contact ends -->
     <script src="script.js"></script>
   </body>
 </html>
