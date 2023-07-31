@@ -80,19 +80,19 @@
     <!-- about ends -->
     <!-- contact starts -->
     <section id="contact">
-      <div class="contact-container">
-        <form>
-          <h1>Lets Take Some Cool Pictures!</h1>
+      
+        <form onsubmit="event.preventDefault(); validateForm()">
+          <h1>Shall we?</h1>
 
-          <lable for="name">Name:</lable>
+          <label for="name">Name:</label>
           <input type="text" id="name" placeholder="Your Name" />
           <small class="error"></small>
 
-          <lable for="email">Email:</lable>
+          <label for="email">Email:</label>
           <input type="text" id="email" placeholder="Your Email" />
           <small class="error"></small>
 
-          <lable for="Message">Message:</lable>
+          <label for="Message">Message:</label>
           <textarea
             id="message"
             placeholder="What's your idea?"
@@ -100,10 +100,10 @@
           ></textarea>
           <small class="error"></small>
 
-          <div class="center">
+          <div class="center-button">
             <input type="submit" value="Send Message" />
             <p id="success"></p>
-          </div>
+          
         </form>
       </div>
     </section>
